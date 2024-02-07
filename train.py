@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     # Read train / dev data
     logging.info("Read train / dev data")
-    train_data = utils.load_nli_sample_train(args.train_data_path, faq_pool=faq_pool) 
+    train_data = utils.load_nli_samples(args.train_data_path, faq_pool=faq_pool) 
 
     logging.info(f"train data {len(train_data)} sample is made")
     train_dataloader = DataLoader(train_data, shuffle=True, batch_size=16)
