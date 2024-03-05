@@ -46,9 +46,6 @@ if __name__ == '__main__':
     vector_top2 = []
     vector_top3 = []
     
-    vector_top5 = 0
-    vector_top10 = 0
-    
     for idx, row in ds.iterrows():
         user_question = row['user_query']
 
@@ -131,13 +128,3 @@ if __name__ == '__main__':
     print(f"Vector Top2 Score: {vector_top2_score/total}")
     print(f"Vector Top3 Score: {vector_top3_score/total}")
     
-    print(f"vector top 1 cnt : {vector_top1_score}")
-    print(f"vector top 2 cnt : {vector_top2_score}")
-    print(f"vector top 3 cnt : {vector_top3_score}")
-    
-    print(f"vector top 5 score : {vector_top5/total}")
-    print(f"vector top 10 score : {vector_top10/total}")
-    
-    print(f"faq count : {total}")
-    
-    # '''
